@@ -1,0 +1,27 @@
+#header-photographic {
+	border: 0;
+	height: 19px;
+	margin: 4px 0px -3px 0px;
+	width: 19px;
+}
+
+#header-photographic-name {
+	padding-left: 8px;
+	padding-right: 0px;
+}
+
+#tweet-wrapper {
+	position: relative;
+	width: 940px;
+	margin: 0px auto;
+	top: 60px;
+	background-color: #FFFFFF;
+}
+
+#tweet-content {
+	position: relative;
+}
+
+.header-top-menu-buttons {
+	margin: 3px 0px 0px 0px;
+}
