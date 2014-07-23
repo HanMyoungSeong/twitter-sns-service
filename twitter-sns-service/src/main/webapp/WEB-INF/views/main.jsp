@@ -17,6 +17,7 @@
 	3.17.2/dom-base/dom-base-min.js&amp;3.17.2/selector-native/selector-native-min.js&amp;3.17.2/selector/selector-min.js&amp;
 	3.17.2/node-core/node-core-min.js&amp;3.17.2/dom-style/dom-style-min.js&amp;3.17.2/node-base/node-base-min.js&amp;
 	3.17.2/event-delegate/event-delegate-min.js&amp;3.17.2/node-event-delegate/node-event-delegate-min.js" async=""></script>
+
 </head>
 <body>
 	<div class="header">
@@ -30,18 +31,58 @@
 					</a>
 				</li>
 				<li>
-					<a class="header-top-menu-buttons" href="#">글쓰기</a>
+					<a id="status-write" class="header-top-menu-buttons" href="#">글쓰기</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div id="tweet-wrapper">
+		<div id="tweet-wrapper-user-status-write">
+			<div class="pure-menu pure-menu-open pure-menu-horizontal">
+				<form action="" method="post">
+					<fieldset>
+						<legend>업데이트</legend>
+						<textarea id="textarea-status-write" placeholder="지금 무슨생각 하십니까?" title="지금 무슨생각 하십니까?"></textarea>
+						<div class="pure-g">
+							<div class="pure-u-2-1">
+								<img id="preview" alt="미리보기"/>
+							</div>
+						    <div class="pure-u-2-1">
+							    <div id="status-write-capture" style="background-image: url('resources/icon/capture.png');">
+									<input class="_n" type="file" onchange="readURL(this);">
+								</div>
+							</div>
+						    <div class="pure-u-1-2">
+								<button type="submit" class="pure-button pure-button-primary">게시</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
 		<div id="tweet-content">
-			여기에 masonary library 적용하면 끈남..ㅋㅋ 아무래도 여기 부분은 template library를 이용해서 뿌려주면좋을거 같애.
+			asdfasdf
 		</div>
 		<div class= "footer l-box is-center" id= "yui_3_17_2_1_1406006214911_8">
 			스터디 맴버 : 한명승, 성의현, 김연주
 		</div>
 	</div>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="resources/JbPopup/jquery.bpopup.min.js"></script>
+		<script type="text/javascript">
+			$("#status-write").click(function(){
+				$("#tweet-wrapper-user-status-write").bPopup();
+			});
+			
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('#preview').attr('src', e.target.result);
+					}
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+		</script>
 </body>
 </html>

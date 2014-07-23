@@ -25,3 +25,40 @@
 .header-top-menu-buttons {
 	margin: 3px 0px 0px 0px;
 }
+
+#tweet-wrapper-user-status-write {
+	margin: 4px 250px 4px 250px;
+	width: 440px;
+	display: none;
+}
+
+#textarea-status-write {
+	font-size: 14px;
+	line-height: 18px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	resize: none;
+}
+
+#status-write-capture {
+	width: 90px;
+	height: 50px;
+	background-repeat: top right;
+}
+
+._n {
+	bottom: 0;
+	cursor: inherit;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	right: 0;
+}
+
+#preview {
+	width: 50px;
+	height: 80px;
+}
