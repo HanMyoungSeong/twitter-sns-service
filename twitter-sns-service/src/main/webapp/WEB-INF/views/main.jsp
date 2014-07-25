@@ -49,7 +49,7 @@
 							</div>
 						    <div class="pure-u-2-1">
 							    <div id="status-write-capture" style="background-image: url('resources/icon/capture.png');">
-									<input class="_n" type="file" onchange="readURL(this);">
+									<input id ="click-photo" class="_n" type="file" multiple="multiple">
 								</div>
 							</div>
 						    <div class="pure-u-1-2">
@@ -69,20 +69,12 @@
 	</div>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="resources/JbPopup/jquery.bpopup.min.js"></script>
+		<script src="resources/js/Util.js"></script>
 		<script type="text/javascript">
 			$("#status-write").click(function(){
 				$("#tweet-wrapper-user-status-write").bPopup();
 			});
-			
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader();
-					reader.onload = function (e) {
-						$('#preview').attr('src', e.target.result);
-					}
-					reader.readAsDataURL(input.files[0]);
-				}
-			}
+			Util.onlyOnePicturePreview("#click-photo", "#preview");			
 		</script>
 </body>
 </html>
