@@ -11,22 +11,16 @@
 }
 
 #tweet-wrapper {
-	position: relative;
-	width: 940px;
-	margin: 0px auto;
-	top: 60px;
-	background-color: #FFFFFF;
-}
-
-#tweet-content {
-	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	top: 80px;
 }
 
 .header-top-menu-buttons {
 	margin: 3px 0px 0px 0px;
 }
 
-#tweet-wrapper-user-status-write {
+#user-status-write {
 	margin: 4px 250px 4px 250px;
 	width: 440px;
 	display: none;
@@ -44,7 +38,6 @@
 #status-write-capture {
 	width: 90px;
 	height: 50px;
-	background-repeat: top right;
 }
 
 ._n {
@@ -59,6 +52,7 @@
 }
 
 #preview {
-	width: 50px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
+	width: 100px;
 }
