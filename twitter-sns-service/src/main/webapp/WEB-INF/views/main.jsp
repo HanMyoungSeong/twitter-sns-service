@@ -74,7 +74,7 @@
 			$("#status-write").click(function(){
 				$("#tweet-wrapper-user-status-write").bPopup();
 			});
-			Util.onlyOnePicturePreview("#click-photo", "#preview");			
+			Util.onlyOnePicturePreview("#click-photo", "#preview");
 		</script>
 </body>
 </html>
